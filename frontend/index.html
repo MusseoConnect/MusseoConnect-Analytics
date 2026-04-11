@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Delhi Museum Analytics Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Delhi Museum Visitor Analytics</h1>
+
+<div class="controls">
+<label>Museum:</label>
+<select id="museumSelect"></select>
+</div>
+
+</header>
+
+
+<section class="kpi-container">
+
+<div class="kpi-card">
+<h3>Total Visitors</h3>
+<p id="totalVisitors">--</p>
+</div>
+
+<div class="kpi-card">
+<h3>Average Age</h3>
+<p id="avgAge">--</p>
+</div>
+
+<div class="kpi-card">
+<h3>Top Nationality</h3>
+<p id="topNationality">--</p>
+</div>
+
+<div class="kpi-card">
+<h3>Phone Provided</h3>
+<p id="phoneRate">--</p>
+</div>
+
+</section>
+
+
+<section class="charts-grid">
+
+<div class="chart-card">
+<h3>Visitors per Museum</h3>
+<img id="visitors_chart">
+</div>
+
+<div class="chart-card">
+<h3>Gender Distribution</h3>
+<img id="gender_chart">
+</div>
+
+<div class="chart-card">
+<h3>Nationality Distribution</h3>
+<img id="nationality_chart">
+</div>
+
+<div class="chart-card">
+<h3>Age Distribution</h3>
+<img id="age_chart">
+</div>
+
+<div class="chart-card">
+<h3>Museum Gender Split</h3>
+<img id="museum_gender_chart">
+</div>
+
+<div class="chart-card">
+<h3>Age Group Distribution</h3>
+<img id="age_group_chart">
+</div>
+
+</section>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
